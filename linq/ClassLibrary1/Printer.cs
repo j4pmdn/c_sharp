@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace oop
 {
-    public class Printer
+    public abstract class Printer
     {
         private string name;
 
-        public int Page { get; set; }
+        public required int Page { get; set; }
 
         public Printer() {
             name = string.Empty;
             Console.WriteLine("----- NEW PRINTER ----");
         }
 
-        public Printer(string name, int page)
+        public Printer(string name)
         {
             this.name = name;
-            this.Page = page;
             Console.WriteLine($"----- NEW PRINTER: {name} -----");
         }
 
@@ -29,5 +28,7 @@ namespace oop
         {
             Console.WriteLine(message);
         }
+
+        public abstract void MyAbstractMethod();
     }
 }

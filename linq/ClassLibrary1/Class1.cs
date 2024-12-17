@@ -12,9 +12,9 @@ namespace ClassLibrary1
         // private -> chỉ được phép gọi bên trong class đó mà thôi
         internal void P()
         {
-            var printer = new Printer();
+            //var printer = new Printer() { Page = 10};
 
-            printer.Print("Hello World");
+            //printer.Print("Hello World");
         }
 
         private void P2()
