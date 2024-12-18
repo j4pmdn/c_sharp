@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace interface_keyword
 {
-    internal interface IReadable
+    internal static class ReadableExts
     {
-        string Name { get; }
-        int ReadInt();
-        string ReadString();
-        static IReadable()
-        {
-
-        }
-        static void WriteName(IReadable readable)
+        public static void WriteName(this IReadable readable)
         {
             Console.WriteLine(readable.Name);
         }
+
     }
 }
