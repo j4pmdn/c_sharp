@@ -9,12 +9,12 @@ namespace ConfigurationSample
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("ConfigFiles/mysettings.json", optional: false)
                 .AddJsonFile("ConfigFiles/mysettings.optional.json", optional: true)
-                .AddXmlFile("ConfigFiles/mysettings.xml")
+                .AddXmlFile("ConfigFiles/mysettings.xml")  
                 .AddKeyPerFile(@"C:\Users\namdo\source\repos\LearnDotNet-Samples\ConfigurationSample\ConfigFiles\KeyPerFile\", optional: true)
                 .AddEnvironmentVariables()
                 .AddCommandLine(args)
                 .Build();
-
+             
             PrintConfiguredProviders(configuration);
             Console.WriteLine();
 
