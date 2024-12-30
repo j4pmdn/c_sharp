@@ -1,0 +1,11 @@
+Yêu cầu:
+Viết chương trình kết nối với CSDL và xuất ra một file với định dang CSV hoặc SQLchương trình nhận vào 3 tham số:
+- Chuỗi connectionString
+- Tên file chứa dữ liệu xuất ra(mặc nhiên là tên table hoặc 'export' nếu dữ lieu lấy từ câu lệnh SELECT)
+- Câu lệnh SELECT hoặc tên TABLE để lấy dữ lieu
+
+Ngoài ra có thể them các tham số tùy chọn
+- Định dang muốn xuất ra(CSV(mặc nhiên) hoặc SQL)
+- Có nén file đích hay ko (dùng định dạng zip)(mặc nhiên là ko)
+- Nối them ngày giờ xuất dữ lieu vào tên file
+Chương trình cần được thiết kế sao cho có thể sửa đổi hoặc nâng cấp dễ dàng sau này
